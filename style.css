@@ -1,21 +1,21 @@
 body {
-    background-color: #f7f7f7;  /* Lighter background for a clean, professional look */
+    background-color: #f7f7f7;  /* Light neutral background */
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 40px;
 }
 
 .container {
-    background-color: #ffffff;  /* White background for the main content */
+    background-color: #ffffff;  /* White background for the content area */
     max-width: 800px;
     margin: auto;
     padding: 40px;
-    border: 1px solid #cccccc;  /* Soft border around the container */
-    box-shadow: none;  /* Remove the shadow for a more formal look */
+    border: 2px solid #cccccc;  /* Thin solid border around the container */
+    box-shadow: none;  /* No shadow for a clean look */
 }
 
 h1 {
-    color: #ff66aa;  /* Keep the title's color bright */
+    color: #ff66aa;  /* Title color */
     font-size: 2em;
     font-weight: bold;
     text-align: center;
@@ -30,29 +30,41 @@ h2 {
 }
 
 ul {
-    list-style-type: none;  /* Remove bullet points for a clean look */
+    list-style-type: none;  /* Remove bullet points */
     padding: 0;
 }
 
 li {
-    background-color: #ffffff;  /* Keep the background white for each item */
+    background-color: #ffffff;  /* White background for each item */
     color: #333;  /* Dark text for readability */
-    font-weight: normal;  /* Remove bold font for a less stylized look */
-    padding: 12px 20px;  /* Slightly smaller padding for a more formal look */
+    font-weight: normal;  /* Regular text weight */
+    padding: 15px 20px;
     margin-bottom: 15px;
-    border-left: 3px solid #66bfff;  /* Thin blue border on the left for subtle emphasis */
-    border-radius: 0;  /* No rounded corners */
-    box-shadow: none;  /* Remove shadow for a cleaner, more formal style */
+    border-left: 5px solid #66bfff;  /* Bold blue left border for emphasis */
+    border-right: 5px solid #66bfff;  /* Sharp right border for balance */
+    position: relative;
+}
+
+/* Create triangle on top of each list item */
+li::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #66bfff;  /* Sharp triangle with blue color */
 }
 
 a {
-    color: #ff66aa;  /* Link color matching the title */
+    color: #ff66aa;  /* Link color */
     text-decoration: none;
     font-weight: normal;  /* Normal font weight for links */
 }
 
 a:hover {
-    text-decoration: underline;  /* Underline links on hover for clarity */
+    text-decoration: underline;  /* Underline links on hover */
 }
 
 .note {
