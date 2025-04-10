@@ -32,16 +32,6 @@ ul {
     padding: 0;
 }
 
-li {
-    background-color: #ffffff;  /* White background for each item */
-    color: #333;  /* Dark text for readability */
-    font-weight: normal;  /* Regular text weight */
-    padding: 15px 20px;
-    margin-bottom: 15px;
-    border-left: 5px solid #66bfff;  /* Bold blue left border for emphasis */
-    border-right: 5px solid #66bfff;  /* Sharp right border for balance */
-    position: relative;
-}
 
 /* Create triangle on top of each list item */
 li::before {
